@@ -1,15 +1,15 @@
 :root{
-
+/* This creates a root for colors and border radius to refer back to later in the code*/
     --navy: #000080;
     --tan: #d8a47f;
     --black: #000000;
     --border-radius: 50px
 }
-
+/* This makes it so that when you click a nav link it will smoothly scroll to the section*/
 html{
     scroll-behavior: smooth;
 }
-
+/* This changes everything in the body's font size and makes sure it stays within the size of the page*/
 body{
     font-size: 20px;
     display: flex;
@@ -17,6 +17,7 @@ body{
     justify-content: space-evenly;
     background-color: var(--navy);
 }
+/* This affects the size and color of the navbar*/
 nav {
     width:100%;
     padding: 20px;
@@ -24,13 +25,13 @@ nav {
     background: var(--tan);
     color: var(--black);
 }
-
+/* This affects the color and spacing between the words in the navbar*/
 nav a{
     background-color: var(--tan);
     padding: 20px;
     text-align: center;
 }
-
+/* This affects the size and position of the headers*/ 
 header {
     width:100%;
     padding: 50px;
@@ -42,7 +43,7 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-
+/* This affects the size and text alignment in the footer*/
 footer {
     width:100%;
     bottom: 0;
@@ -50,13 +51,13 @@ footer {
     text-align: left;;
     color: var(--black) ;
 }
-
+/* This affects the background color and padding of all areas under section*/
 .sections {
     background-color: var(--navy);
     padding: 10px;
 
 }
-
+/* This affects the border and spacing of all lines under area*/
 .area{
     border-style: solid;
     border-width: 3px;
@@ -67,19 +68,19 @@ footer {
     box-shadow: 10px 10px 5px grey;
     margin: 20px;
 }
-
+/* This affects the header in all area sections*/
 .area > header{
     border-radius: var(--border-radius) var(--border-radius) 0 0;
     padding: 20px;
 }
-
+/* This affects text in all area sections*/
 .area > p {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     color: var(--black);
 }
-
+/* This affects images in all area sections*/
 .area img {
     border-style: solid;
     border-width: 2px;
@@ -88,7 +89,7 @@ footer {
     height: 300px;
     padding: 3px;
 }
-
+/* This makes images expand in the "My Work" area*/
 .area a:hover img{
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba (0, 0, 0, 0.5);
@@ -98,9 +99,15 @@ h1,h3{
     color: var(--black);
     text-align: center;
 }
+/* These allow for scrolling when links are clicked and centers everything*/
+#My-Work{
+    text-align: center;
+}
 
-#My-Work
+#About-me{
+    text-align: center;
+}
 
-#About-me
-
-#Contact
+#Contact{
+    text-align: left;
+}
